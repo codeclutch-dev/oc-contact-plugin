@@ -1,0 +1,11 @@
+<ul class="social-icons">
+
+    {% for icon in cc_social_icons.icons  %}
+    <li class="social-icons__item">
+        <a href="{{ icon.url }}" target="_blank" rel="noopener">
+            <i class="{{ icon.icon }}"></i>
+        </a>
+    </li>
+    {% endfor %}
+
+</ul>

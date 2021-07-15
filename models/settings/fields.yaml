@@ -1,0 +1,80 @@
+fields:
+    company_name:
+        label: 'codeclutch.contact::lang.settings.company_name'
+        span: full
+        type: text
+    phone:
+        label: 'codeclutch.contact::lang.settings.phone'
+        span: auto
+        type: text
+    email:
+        label: 'codeclutch.contact::lang.settings.email'
+        span: auto
+        type: text
+tabs:
+    fields:
+        address_street:
+            label: 'codeclutch.contact::lang.settings.address_street'
+            span: auto
+            type: text
+            tab: 'codeclutch.contact::lang.settings.address'
+        address_number:
+            label: 'codeclutch.contact::lang.settings.address_number'
+            span: auto
+            type: text
+            tab: 'codeclutch.contact::lang.settings.address'
+        address_postcode:
+            label: 'codeclutch.contact::lang.settings.address_postcode'
+            span: auto
+            type: text
+            tab: 'codeclutch.contact::lang.settings.address'
+        address_city:
+            label: 'codeclutch.contact::lang.settings.address_city'
+            span: auto
+            type: text
+            tab: 'codeclutch.contact::lang.settings.address'
+        country:
+            label: 'codeclutch.contact::lang.settings.country'
+            span: auto
+            type: text
+            tab: 'codeclutch.contact::lang.settings.address'
+        social_media:
+            label: 'codeclutch.contact::lang.settings.social_media'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'codeclutch.contact::lang.settings.social_media'
+            form:
+                fields:
+                    icon:
+                        label: 'codeclutch.contact::lang.settings.select_icon'
+                        type: zakir_allfonticons
+                        placeholder: 'codeclutch.contact::lang.settings.select'
+                    url:
+                        label: 'codeclutch.contact::lang.settings.url'
+                        span: full
+                        type: text
+        receivers:
+            label: 'codeclutch.contact::lang.settings.receivers'
+            prompt: 'Add new item'
+            span: auto
+            hidden: 0
+            type: repeater
+            tab: 'codeclutch.contact::lang.settings.receivers'
+            form:
+                fields:
+                    name:
+                        label: 'codeclutch.contact::lang.settings.name'
+                        prompt: 'Add new item'
+                        span: auto
+                        hidden: 0
+                        type: text
+                        tab: 'codeclutch.contact::lang.settings.contact_form_config'
+                    email:
+                        label: 'codeclutch.contact::lang.settings.email'
+                        span: auto
+                        type: text
+                    phone:
+                        label: 'codeclutch.contact::lang.settings.phone'
+                        span: auto
+                        type: text

@@ -1,0 +1,41 @@
+<ul class="contact-information">
+
+    {% if cc_contact_information.display_logo %}
+    <li class="contact-information__item contact-information__item--logo">
+        <img src="{{ cc_contact_information.logo.thumb(cc_contact_information.logo_width, cc_contact_information.logo_height) }}" alt="logo">
+    </li>
+    {% endif %}
+
+    {% if cc_contact_information.display_company_name %}
+    <li class="contact-information__item">
+        {{ cc_contact_information.company_name }}
+    </li>
+    {% endif %}
+
+    <li class="contact-information__item">
+
+        {% if cc_contact_information.use_icons %}
+        <i class="fa fa-at"></i>
+        {% endif %}
+
+        {{ cc_contact_information.email }}
+    </li>
+    <li class="contact-information__item">
+
+        {% if cc_contact_information.use_icons %}
+        <i class="fa fa-phone"></i>
+        {% endif %}
+
+        {{ cc_contact_information.phone }}
+    </li>
+    <li class="contact-information__item">
+
+        {% if cc_contact_information.use_icons %}
+        <i class="fa fa-location-arrow"></i>
+        {% endif %}
+
+        {{ cc_contact_information.street }} {{ cc_contact_information.number }}<br>
+        {{ cc_contact_information.post_code }}, {{ cc_contact_information.city }}
+    </li>
+    <li class="contact-information__item">{{ cc_contact_information.country }}</li>
+</ul>

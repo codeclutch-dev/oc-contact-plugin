@@ -1,0 +1,18 @@
+<ul class="contact-information-receivers">
+
+    {% for receiver in cc_receivers.receivers %}
+    <li class="contact-information-receivers__item">
+
+        {% if cc_receivers.use_icons %}
+        <i class="fa fa-user"></i>
+        {% endif %}
+
+        <div>
+            <p>{{ receiver.name }}</p>
+            <p>{{ receiver.email }}</p>
+            <p>{{ receiver.phone }}</p>
+        </div>
+    </li>
+    {% endfor %}
+
+</ul>
