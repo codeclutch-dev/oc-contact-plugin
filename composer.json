@@ -1,5 +1,5 @@
 {
-    "name": "codeclutch/contact-plugin",
+    "name": "codeclutch/oc-contact-plugin",
     "description": "Plugin providing contact information on website for October CMS",
     "homepage": "https://codeclutch.pl",
     "type": "october-plugin",
